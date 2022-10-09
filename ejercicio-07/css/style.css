@@ -1,0 +1,231 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+:root{
+   --bgc-black:#1f2024;
+   --bgc-hover:#d6e2de;
+   --bgc-hover-green:#4d6d63;
+   --bgc-legend-green:#2b3d37;
+   --font-family-roboto:'Roboto', sans-serif;
+   --font-family-poppins:'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: var(--bgc-black);
+    padding: 20px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+
+.header{
+    margin:2rem auto ;
+    text-align: center;
+    max-width: 600px;
+}
+
+
+    
+
+
+.container__header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 0.5;
+    margin: 0 auto;
+    
+}
+
+.button__header{
+   display: block;
+    position: fixed;
+    right: 0.4em;
+    top: 0.4em;
+    width: 5em;
+    height: 2em;
+    opacity: 0.6;
+    color: aliceblue;
+    background-color: #4d8377;
+    border: none;
+   border-radius: 30px;
+   font-family: var(--font-family-poppins);
+   box-shadow: 0 0 2px var(--bgc-hover);
+   
+   
+    
+}
+.button__header:hover{
+    background-color: aquamarine;
+    color:#fff;
+    opacity: initial;
+    
+
+}
+
+.title__header{
+    font-weight: 700 ;
+    font-family: var(--font-family-poppins);
+    color: #fff;
+    width: 100%;
+    border-left:0.3em solid var(--bgc-black) ;
+    border-right:0.3em solid var(--bgc-black) ;
+    border-top:0.3em solid var(--bgc-legend-green);
+    border-bottom:0.3em solid var(--bgc-legend-green);
+    
+
+}
+legend{
+    
+    background: var(--bgc-legend-green);
+    padding:0.3em ;
+    color: #fff;
+    margin:0.6em ;
+    border-radius:4px;
+    font-family: var(--font-family-roboto);
+    box-shadow: 0 0 2px var(--bgc-black);
+    text-transform: uppercase;
+    
+}
+
+
+fieldset{
+    background-color: var(--bgc-hover);
+    border-radius: 1px;
+    border: none;
+    box-shadow: 0px 0px 2px  var(--bgc-legend-green);
+    
+    
+}
+
+fieldset:focus-within{
+    background-color: var(--bgc-hover-green);
+    transition: 2s;
+}
+
+input:focus{
+    background-color: #2b3d37;
+    color: #d6e2de;
+}
+
+
+.section--one__div,
+.section--two__div{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.section--two__div{
+    margin-bottom: 1em;
+}
+
+.section--one__div input,
+.section--one__div label,
+.section--two__div input,
+.section--two__div label{
+    width:80%;
+    padding: 0.2em;
+    margin-bottom: 2px;
+    
+}
+.section--two__div input::placeholder{
+    text-align: right;
+    color: #4d8377;
+    font-family: var(--font-family-roboto);
+
+
+}
+select{
+    width:80%;
+    padding: 0.2em;
+    margin-top: 2px;
+}
+
+textarea{
+    min-width: 80%;
+    max-width: 81%; 
+    padding: 0.2em;
+    margin-bottom: 5px;
+}
+
+.section--one__div6 {
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.section--one__div6-para{
+    margin-bottom: 0.3em;
+}
+
+    
+.container__future--one,
+.container__future--two{
+
+    margin: 2em;
+}
+
+.container__future--one-figure2,
+.container__future--two-figure2{
+  
+  border-top: 0.8em dotted var(--bgc-hover-green);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section--three__div,
+.section-three__paragraph,
+.section--three__div p{
+    margin-left: 0.3em;
+    margin-bottom: 0.8em;
+}
+
+.section-three__paragraph{
+    font-size: 0.8em;
+    padding-top: 1em;
+}
+
+.section-four__container{
+    margin: 1em 0.3em;
+    color: #fff;
+}
+
+.section-four__container div{
+    margin: 1em 0.3em;
+}
+.section-four__paragraph{
+font-size: .8em;
+padding-top: 1em;
+
+}
+.section-four__button{
+    display: flex;
+    justify-content: center;
+}
+.section-four__button input{
+    background-color: var(--bgc-legend-green);
+    padding: 0.8em;
+    margin: 0.6em;
+    color: var(--bgc-hover);
+    border-radius: 3px;
+    box-shadow: 0 0 2px var(--bgc-hover);
+    border: none;
+    
+}
+
+.section-four__button input:hover{
+ background-color: var(--bgc-hover-green);
+ color: var(--bgc-legend-green);
+}
+

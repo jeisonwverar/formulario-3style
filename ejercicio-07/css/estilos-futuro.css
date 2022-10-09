@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --darkblue-one: #00072d;
+    --darkblue-two: #001c55;
+    --darblue-three: #0a2472;
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span{
+    display: none;
+}
+
+body{
+    font-family: Roboto;
+
+    
+
+    background-image: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, .2) 0%,
+        rgba(9, 9, 121, .2) 46%
+    )
+    
+    ,url("/img/mohamed-fareed-rbSNsoXk-3A-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
+h1, legend, label, p{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure{
+    background-image: url(/img/weights-sinfondo.png);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button__header{
+    background-color: var(--darkblue-two);
+    padding: 1em;
+    display: block;
+    position: fixed;
+    left: 0em;
+    bottom:0.8em;
+    display: block;
+    border-radius: 15px 30px 45px 7.5px;
+    border: none;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px var(--darkblue-one);
+    opacity: 50%;
+    
+}
+.button__header:hover{
+    
+    color: aliceblue;
+    background-color: var(--darblue-three);
+    opacity: 100%;
+    
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.section--one__div5{
+    display: none;
+}
+
+.section--one__div input,
+.section--one__div label,
+.section--two__div input,
+.section--two__div label{
+    width:90%;
+    padding: .5em;
+    margin-bottom: 10px;
+}
+
+.section--one__div1 input, 
+.section--one__div2 input,
+.section--one__div3 input,
+.section--two__div1 input,
+.section--two__div2 input,
+.section-four__button input
+{
+
+       width: 70%;
+       display: block;
+       margin: auto;
+       margin-bottom: 1em;
+       background-color: transparent;
+       border: none;
+       border-bottom: white thin solid;
+       text-align: center;
+       outline: none;
+       padding: .2em 0;
+       font-size: .9em;
+       color: white;
+    
+}
+input:hover{
+    background-color: var(--darkblue-two);
+    color: #d6e2de;
+}
+
+select{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: .5rem;
+    background-color: var(--darblue-three);
+    border: none;;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.section--one__div6 label,
+.section--one__div6 input{
+    display: inline;
+   /*  border:solid 1px red; */
+    margin: 0 auto;
+    
+
+}
+
+label{
+    margin-top: 2em;
+}
+
+fieldset{
+    background-color: rgba(35, 13, 116, 0.151);
+    border: none;
+    box-shadow: 0 0 6px silver;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.section-four__container div{
+    margin:1em;
+
+}
+
+.section-three__container div,
+.section-three__container p{
+    margin:1em;
+
+}
+
+
+fieldset:focus-within{
+    background-color: var(--darkblue-two);
+    opacity: 50%;
+    transition: 2s;
+    color:white;
+    font-size: 600;
+}

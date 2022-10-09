@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+:root{
+    --grandient-black:linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    --grandient-orange:linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    --color--orange:#DC2F02;
+    --color--dark:#03071E;
+    --color--yellow:#E85D04;
+    --fontFamily-lato:'Lato', sans-serif;
+    --fonFamily-roboto:'Roboto Condensed', sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:var(--grandient-black); 
+    color: aliceblue;
+}
+
+.button__header{
+    background-color: var(--color--orange);
+    padding: 1em;
+    display: block;
+    position: fixed;
+    left: 0em;
+    bottom:0.8em;
+    display: block;
+    border-radius: 15px 30px 45px 7.5px;
+    border: none;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px var(--color--yellow);
+    opacity: 50%;
+    
+}
+.button__header:hover{
+    
+    color: aliceblue;
+    background-color: var(--color--yellow);
+    opacity: 100%;
+    
+}
+
+legend span,
+h1 span{
+    display: none;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 300px;
+    min-width: 200px; 
+}
+
+h1{
+
+    text-align: center;
+    background-image: url(/img/header2small.jpg);
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6em;
+    box-shadow: 0 2px 2px var(--color--dark) ;
+    font-size: 3rem;
+    background-attachment: fixed;
+    
+}
+
+legend{
+    background: var(--color--yellow);
+    padding: 0.6em;
+    font-family: var(--fonFamily-roboto);
+    font-weight: 400;
+    border-radius: 3px 4px ;
+    text-align: center;
+
+}
+
+.section-one__fieldset{
+    background-image:  url(/img/small-first-from.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+
+
+
+.section-two__fieldset,
+.section-three__fieldset{
+    background-color: var(--color--dark);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    
+
+}
+
+.section-one__container div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:var(--color--yellow);
+    flex-grow: 2em;
+    font-weight: 900;
+
+}
+
+textarea{
+    max-width: 70%;
+    max-height: 10em;
+    
+}
+
+.section-two__container div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4em;
+}
+
+.section-three__container div{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container__future--one,
+.container__future--two,
+.container__future--three{
+ padding: 0.2em;
+}
+
+.section-four__container div{
+    text-align: center;
+    margin-bottom: 1.2em;
+    
+}
+
+.section-four__button input{
+    padding: 0.8em;
+    background: var(--color--yellow) ;
+    color: aliceblue;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 2px;
+    
+}
+
+.section-four__button input:hover{
+    background-color: var(--color--orange);
+    color: white;
+}
+
+@media (min-width:840px){
+
+    body{
+        background: url(/img/bgc-escritorio.jpg);
+    }
+
+  
+    
+    form{
+        margin:  2em auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:auto;
+        grid-gap: 0.2em;
+        grid-template-areas: 
+        
+        " elem1 elem10 elem5 elem9 "
+        " elem2 elem20 elem5  elem9" 
+        " elem3 elem30 elem8  elem8" 
+        " elem4 elem40 elem8  elem8"
+        
+        ;
+
+    }
+
+    form section{
+        width: 40em; 
+        text-align: left;
+    }
+     
+
+    .section-four__container{
+        grid-area: elem4;
+    }
+    .section-three__container{
+        grid-area: elem3;
+    }
+    .section-two__container{
+        grid-area: elem2;
+        height:200px ;   
+    }
+    .section-one__container{
+        grid-area: elem1;
+        border: 7px solid #DC2F02;
+        
+    }
+
+    .section-one__fieldset{
+        width: 20em;
+
+    }
+
+    .section-two__fieldset{
+        width: 20em;
+        height: 10em;
+    }
+    .section-three__fieldset{
+        padding: 2em;
+        width: 20em;
+        
+    }
+
+    .section-four__container{
+    color: var(--color--dark);
+    font-size: 1.5em;
+    }
+
+    section input{
+        opacity: 50%;
+       
+    }
+
+    section input:focus{
+        opacity: 100%;
+    }
+
+    .section-four__button input{
+        opacity: 100%;
+        border-radius: 0.5em;
+    }
+
+    section-four__paragraph{
+        margin: 20px;
+    }
+
+    .section-one__fieldset input,
+    .section-two__fieldset input{
+        width: 80%;
+    }
+
+    .container__future--three,
+    .container__future--two,
+    .container__future--one{
+        width: 100px;
+        height: 100px;
+    }
+
+.container__future--one{
+    grid-area: elem5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.container__future--three-figure1{
+    background-image: url(/img/boxeo.jpg);
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow:  1px 1px 2px #03071E;
+}
+.container__future--one-figure1{
+    background-image: url(/img/frase-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    background-position: 30% 80%;
+    box-shadow:  1px 1px 2px #03071E;
+}
+.container__future--one-figure3{
+    background-image: url(/img/frase2.jpg);
+    background-size: cover;
+    border-radius: 1em; 
+    background-position: 70%;
+    box-shadow:  1px 1px 2px #03071E;
+}
+
+.container__future--three-figure3{
+    background-image: url(/img/basketball.jpg);
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow:  1px 1px 2px #03071E;
+}
+.container__future--three-figure2{
+    background-image: url(/img/frase3.jpg);
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow:  1px 1px 2px #03071E;
+}
+.container__future--one-figure2{
+    background-image: url(/img/tenis.jpg);
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow:  1px 1px 2px #03071E;
+
+}
+.container__future--three{
+    grid-area: elem9;
+    width: 100%;
+    height: 100% ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}  
+.container__future--three-figure1,
+.container__future--three-figure2,
+.container__future--three-figure3,
+.container__future--one-figure1,
+.container__future--one-figure2,
+.container__future--one-figure3{
+    background-color: #DC2F02;
+   width: 12em;
+    height: 11em;
+}
+
+.container__future--two{
+    grid-area: elem8;
+    margin: 0 auto;
+    width: 80%;
+    height: 45vh;
+    background-image: url(/img/motivation.jpg);
+    background-position: 30% 80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 2em;
+    box-shadow:  1px 1px 2px #03071E;
+    
+}
+
+
+
+
+
+
+
+
+
+ }
+    
+    
